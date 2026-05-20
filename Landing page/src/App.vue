@@ -4,11 +4,24 @@
 </script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <NavBar></NavBar>
+  <div id="projectCardContainer">
+    <ProjectCard 
+      titulo="Mi portfolio" 
+      descripcion="Proyecto 1"
+      link="https://github.com/sebas/portfolio" 
+    />
+    <ProjectCard 
+      titulo="Otro proyecto"
+      descripcion="Proyecto 2" 
+      link="https://github.com/sebas/otro" 
+    />
+  </div>
+  
 </template>
 
-<style scoped></style>
+<style scoped>
+  #projectCardContainer{
+    display: flex;
+  }
+</style>
