@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import NavBar from './components/NavBar.vue';
+  import ProjectCard from './components/ProjectCard.vue';
+</script>
 
 <template>
   <h1>You did it!</h1>
