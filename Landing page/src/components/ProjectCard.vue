@@ -17,6 +17,7 @@ defineProps<{
 <style scoped>
 .card{
     border-color: black;
+    margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 2%;
     padding-left: 5px;

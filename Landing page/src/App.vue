@@ -1,10 +1,14 @@
 <script setup lang="ts">
+  import AboutSection from './components/AboutSection.vue';
   import NavBar from './components/NavBar.vue';
   import ProjectCard from './components/ProjectCard.vue';
 </script>
 
 <template>
   <NavBar></NavBar>
+
+  <AboutSection></AboutSection>
+
   <div id="projectCardContainer">
     <ProjectCard 
       titulo="Mi portfolio" 
