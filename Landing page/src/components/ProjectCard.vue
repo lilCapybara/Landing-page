@@ -26,7 +26,7 @@ a {
     border-color: black;
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-right: 2%;
+    margin-right: 5%;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;

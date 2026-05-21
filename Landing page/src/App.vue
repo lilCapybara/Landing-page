@@ -21,6 +21,16 @@
       descripcion="Proyecto 2" 
       link="https://github.com/sebas/otro" 
     />
+    <ProjectCard 
+      titulo="Otro proyecto"
+      descripcion="Proyecto 2" 
+      link="https://github.com/sebas/otro" 
+    />
+    <ProjectCard 
+      titulo="Otro proyecto"
+      descripcion="Proyecto 2" 
+      link="https://github.com/sebas/otro" 
+    />
   </div>
   
 </template>
@@ -29,4 +39,6 @@
   #projectCardContainer{
     display: flex;
   }
+
+  
 </style>

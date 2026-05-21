@@ -4,11 +4,11 @@
 
 <template>
     <div id="container">
-        <img :src="downloadIcon" alt="descargarCV" class="barItem">
         <h3 class="barItem">Sobre mi</h3>
         <h3 class="barItem">Proyectos</h3>
         <h3 class="barItem">Contacto</h3>
         <img src="" alt="seleccionarIdioma" class="barItem">
+        <img :src="downloadIcon" alt="descargarCV" class="barItem">
     </div>
 </template>
 
@@ -28,7 +28,7 @@
     }
 
     img{
-        height: 100%;
+        height: 80%;
     }
     
 </style>
