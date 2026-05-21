@@ -7,14 +7,21 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card">
-    <h2 id="title">{{ titulo }}</h2>
-    <p>{{ descripcion }}</p>
-    <a :href="link" target="_blank">Ver proyecto</a>
-  </div>
+  <a :href="link" target="_blank">
+    <div class="card">
+      <h2 id="title">{{ titulo }}</h2>
+      <p>{{ descripcion }}</p>
+    </div>
+  </a>
 </template>
 
 <style scoped>
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .card{
     border-color: black;
     margin-top: 2%;
@@ -25,8 +32,18 @@ defineProps<{
     padding-bottom: 5px;
     border-radius: 10px;
     background-color: rgb(115, 179, 223);
+
+    transition: transform 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgb(55, 87, 109);
+}
+
 #title{
     text-align: center;
+    color: aliceblue;
 }
+
 </style>

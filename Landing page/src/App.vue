@@ -9,6 +9,7 @@
 
   <AboutSection></AboutSection>
 
+  <h2>Proyectos</h2>
   <div id="projectCardContainer">
     <ProjectCard 
       titulo="Mi portfolio" 
