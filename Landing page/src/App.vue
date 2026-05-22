@@ -1,10 +1,12 @@
 <script setup lang="ts">
   import AboutSection from './components/AboutSection.vue';
+import Front from './components/Front.vue';
   import NavBar from './components/NavBar.vue';
   import ProjectCard from './components/ProjectCard.vue';
 </script>
 
 <template>
+  <Front></Front>
   <NavBar></NavBar>
 
   <AboutSection></AboutSection>
