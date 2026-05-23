@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import downloadIcon from '../../assets/downloadIcon.svg'
+    import downloadIcon from '../../assets/images/downloadIcon.svg'
 </script>
 
 <template>

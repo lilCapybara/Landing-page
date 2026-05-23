@@ -3,6 +3,7 @@
 import Front from './components/Front.vue';
   import NavBar from './components/NavBar.vue';
   import ProjectCard from './components/ProjectCard.vue';
+import TecnoStack from './components/TecnoStack/TecnoStack.vue';
 </script>
 
 <template>
@@ -10,6 +11,8 @@ import Front from './components/Front.vue';
   <NavBar></NavBar>
 
   <AboutSection></AboutSection>
+
+  <TecnoStack></TecnoStack>
 
   <h2>Proyectos</h2>
   <div id="projectCardContainer">
