@@ -23,6 +23,12 @@ defineProps<{
   flex-direction: column;
   align-items: center;
   margin-left: 2%;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .iconContainer {

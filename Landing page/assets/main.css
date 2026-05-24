@@ -1,5 +1,7 @@
 body {
-  background-color: #292c2e;
+    background-color: #292c2e;
+    margin: 0;
+    padding: 0;
 }
 
 h1,h2,h3{
@@ -9,3 +11,4 @@ h1,h2,h3{
 p{
   color:#c4c4c4;
 }
+

@@ -23,6 +23,7 @@ a {
 }
 
 .card{
+  height: 100%;
     border-color: black;
     margin-top: 2%;
     margin-bottom: 2%;
