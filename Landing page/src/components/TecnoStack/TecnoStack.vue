@@ -15,6 +15,31 @@
         TecnoAlt="Icono Java"
         TecnoNombre="Angular">
         </StackCard>
+        <StackCard
+        TecnoIcono="../../../assets/images/gitIcon.png"
+        TecnoAlt="Icono Git"
+        TecnoNombre="Git">
+        </StackCard>
+        <StackCard
+        TecnoIcono="../../../assets/images/htmlIcon.png"
+        TecnoAlt="Icono HTML"
+        TecnoNombre="HTML">
+        </StackCard>
+        <StackCard
+        TecnoIcono="../../../assets/images/cssIcon.png"
+        TecnoAlt="Icono CSS"
+        TecnoNombre="CSS">
+        </StackCard>
+        <StackCard
+        TecnoIcono="../../../assets/images/jsIcon.png"
+        TecnoAlt="Icono Javascript"
+        TecnoNombre="Javascript">
+        </StackCard>
+        <StackCard
+        TecnoIcono="../../../assets/images/kotlinIcon.png"
+        TecnoAlt="Icono Kotlin"
+        TecnoNombre="Kotlin">
+        </StackCard>
     </div>
 </template>
 

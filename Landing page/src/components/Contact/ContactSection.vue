@@ -5,8 +5,10 @@ import ContactInfo from './ContactInfo.vue';
 </script>
 
 <template>
-    <ContactInfo></ContactInfo>
-    <ContactForm></ContactForm>
+    <div id="container">
+        <ContactInfo></ContactInfo>
+        <ContactForm></ContactForm>
+    </div>   
 </template>
 
 <style scoped></style>

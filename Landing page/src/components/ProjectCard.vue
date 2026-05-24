@@ -32,14 +32,14 @@ a {
     padding-right: 5px;
     padding-bottom: 5px;
     border-radius: 10px;
-    background-color: rgb(115, 179, 223);
+    background-color: rgb(78, 78, 78);
 
     transition: transform 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.05);
-  background-color: rgb(55, 87, 109);
+  background-color: rgb(126, 126, 126);
 }
 
 #title{
