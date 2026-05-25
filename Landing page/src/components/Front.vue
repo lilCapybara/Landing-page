@@ -22,15 +22,4 @@
         padding-bottom: 80px;
         
     }
-
-    #container::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        background: linear-gradient(to bottom, transparent, #292c2e);
-        pointer-events: none;
-    }
 </style>

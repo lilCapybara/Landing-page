@@ -1,12 +1,13 @@
 <script setup lang="ts">
   import AboutSection from './components/AboutSection.vue';
   import ContactSection from './components/Contact/ContactSection.vue';
-import Education from './components/Education.vue';
+  import Education from './components/Education.vue';
   import Front from './components/Front.vue';
-import LaboralXP from './components/LaboralXP.vue';
+  import LaboralXP from './components/LaboralXP.vue';
   import NavBar from './components/NavBar.vue';
   import ProjectCard from './components/ProjectCard.vue';
   import TecnoStack from './components/TecnoStack/TecnoStack.vue';
+  import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -15,15 +16,15 @@ import LaboralXP from './components/LaboralXP.vue';
   <NavBar></NavBar>
 
   <div id="generalContainer">
-    <AboutSection></AboutSection>
+    <AboutSection id="sobre-mi"></AboutSection>
 
-    <Education></Education>
+    <Education id="formacion"></Education>
 
-    <LaboralXP></LaboralXP>
+    <LaboralXP id="experiencia"></LaboralXP>
 
-    <TecnoStack></TecnoStack>
+    <TecnoStack id="stack"></TecnoStack>
 
-    <h2>Proyectos</h2>
+    <h2 id="proyectos">Proyectos</h2>
     <div id="projectCardContainer">
       <ProjectCard 
         titulo="Sitio web realizado en Angular"
@@ -52,7 +53,8 @@ import LaboralXP from './components/LaboralXP.vue';
         link="https://github.com/workerCapybara/vgbrowser.git" 
       />
     </div>
-    <ContactSection></ContactSection>
+    <ContactSection id="contacto"></ContactSection>
+    <Footer></Footer>
   </div>
   
 </template>

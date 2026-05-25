@@ -29,15 +29,19 @@
 <template>
     <div id="formularioConsulta">
         <h3>¡Envie su consulta!</h3>
-        <p>Nombre</p>
-        <input v-model="nombre" placeholder="Ingrese su nombre aqui..." />
+        <div id="inputContainer">
+            <div>
+                <p>Nombre</p>
+                <input v-model="nombre" placeholder="Ingrese su nombre aqui..." />
 
-        <p>Correo electrónico</p>
-        <input v-model="email" placeholder="Ingrese su correo electrónico aqui..." />
-
-        <p>Consulta</p>
-        <textarea v-model="consulta" placeholder="Ingrese su consulta aqui..."></textarea>
-
+                <p>Correo electrónico</p>
+                <input v-model="email" placeholder="Ingrese su correo electrónico aqui..." />
+            </div>
+            <div id="consultaContainer">
+                <p>Consulta</p>
+                <textarea v-model="consulta" placeholder="Ingrese su consulta aqui..."></textarea>
+            </div>
+        </div>
         <button id="sendButton" @click="enviar">Enviar</button>
     </div>
     
@@ -47,7 +51,19 @@
     #formularioConsulta{
         display: flex;
         flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.466);
+        padding-left: 5%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        border-radius: 10px;
     }
+
+    #inputContainer{
+        display: flex;
+        gap: 10%;
+    }
+
+    
 
     input, textarea{
         width: 110%;
