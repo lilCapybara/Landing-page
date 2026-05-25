@@ -10,6 +10,7 @@
                 <div id="menuOptions">
                     <ul>
                         <li><h3 class="barItem">Sobre mi</h3></li>
+                        <li><h3 class="barItem">Formacion académica</h3></li>
                         <li><h3 class="barItem">Experiencia laboral</h3></li>
                         <li><h3 class="barItem">Mi stack</h3></li>
                         <li><h3 class="barItem">Proyectos</h3></li>

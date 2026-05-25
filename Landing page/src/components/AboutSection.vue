@@ -5,7 +5,9 @@
     <p>
         Empleado de comercio y estudiante de la
         Tecnicatura Universitaria en Desarrollo de
-        Aplicaciones Informaticas (TUDAI).
+        Aplicaciones Informaticas (TUDAI) en la UNICEN 
+        (Universidad Nacional del Centro de la provincia 
+        de Buenos Aires).
     </p>
     <p>
         Me considero una persona que presta especial
