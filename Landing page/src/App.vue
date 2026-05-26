@@ -5,9 +5,9 @@
   import Front from './components/Front.vue';
   import LaboralXP from './components/LaboralXP.vue';
   import NavBar from './components/NavBar.vue';
-  import ProjectCard from './components/ProjectCard.vue';
   import TecnoStack from './components/TecnoStack/TecnoStack.vue';
   import Footer from './components/Footer.vue';
+  import ProjectsSection from './components/ProjectsSection/ProjectsSection.vue';
 </script>
 
 <template>
@@ -16,44 +16,18 @@
   <NavBar></NavBar>
 
   <div id="generalContainer">
-    <AboutSection id="sobre-mi"></AboutSection>
-
-    <Education id="formacion"></Education>
-
-    <LaboralXP id="experiencia"></LaboralXP>
-
-    <TecnoStack id="stack"></TecnoStack>
-
-    <h2 id="proyectos">Proyectos</h2>
-    <div id="projectCardContainer">
-      <ProjectCard 
-        titulo="Sitio web realizado en Angular"
-
-        descripcion="Sitio web para venta de maquetas que contiene
-        una lista de productos, un carrito de compra y una
-        pagina de contacto."
-
-        link="https://github.com/lilCapybara/Koda-CraftAngular.git" 
-      />
-      <ProjectCard 
-        titulo="League of Legends API"
-
-        descripcion="API con endpoints para operaciones CRUD,
-        incluyendo ademas una autenticacion con usuario
-        y contraseña y token JWT."
-
-        link="https://github.com/workerCapybara/LeagueOfLegendsAPI" 
-      />
-      <ProjectCard 
-        titulo="Browser de videojuegos para Android"
-
-        descripcion="Aplicacion para Android que consume datos de la
-        API RAWG para mostrar una lista de videojuegos." 
-
-        link="https://github.com/workerCapybara/vgbrowser.git" 
-      />
-    </div>
-    <ContactSection id="contacto"></ContactSection>
+    <div id="sobre-mi"><AboutSection></AboutSection></div>
+    
+    <div id="formacion"><Education></Education></div>
+    
+    <div id="experiencia"><LaboralXP></LaboralXP></div>
+    
+    <div id="stack"><TecnoStack ></TecnoStack></div>
+    
+    <div id="proyectos"><ProjectsSection></ProjectsSection></div>
+    
+    <div id="contacto"><ContactSection></ContactSection></div>
+    
     <Footer></Footer>
   </div>
   
@@ -65,12 +39,6 @@
     margin-left: 2%;
   }
 
-  #projectCardContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    align-items: stretch;
-    margin-bottom: 10%;
-  }
+  
   
 </style>

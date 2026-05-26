@@ -1,7 +1,9 @@
 <script setup lang="ts">
     import { useI18n } from 'vue-i18n'
 
-const { t, locale } = useI18n()
+    const { t, locale } = useI18n()
+
+    
 </script>
 
 <template>
@@ -13,9 +15,7 @@ const { t, locale } = useI18n()
         <a class="barItem" href="#stack">{{ t('nav.stack') }}</a>
         <a class="barItem" href="#proyectos">{{ t('nav.proyectos') }}</a>
         <a class="barItem" href="#contacto">{{ t('nav.contacto') }}</a>
-        <h3>  
-            <a class="downloadBtn" href="../../public/Sebastian Ortega CV (ES).pdf" target="_blank">Ver CV</a>
-        </h3>
+        <a class="downloadBtn" href="../../public/Sebastian Ortega CV (ES).pdf" target="_blank">Ver CV</a>
     </div>   
 </template>
 
@@ -31,8 +31,12 @@ const { t, locale } = useI18n()
 .barItem {
     color: rgb(228, 228, 228);
     cursor: pointer;
-    border-bottom: 2px solid transparent; /* reserva el espacio para evitar "salto" */
+    border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease;
+    text-decoration: none;
+    font-size: 1.17rem;
+    font-weight: bold;
+    padding: 16px 0;
 }
 
 .barItem:hover {

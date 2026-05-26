@@ -9,17 +9,49 @@
 </template>
 
 <style scoped>
-    h1 { margin-bottom: 1px; }
-    h2 { margin-top: 1px; }
+    h1 { 
+        margin-bottom: 1px; 
+        color: black;
+    }
+    h2 { 
+        margin-top: 1px; 
+        color: black;
+    }
 
     #container {
-        background-color: rgb(12, 42, 58);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
-        padding-bottom: 80px;
-        
+        min-height: 200px;
+
+        background: linear-gradient(
+		-45deg,
+		#ffffff,
+		#ffe4e9,
+		#fcc8e2,
+		#f6baed,
+		#efb0ff,
+		#d3a2ff,
+		#8eb8ff,
+		#91efff,
+		#d5f9ff
+	    );
+	    background-size: 400% 400%;
+	    animation: gradient 9s ease infinite;
+    }
+   
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 </style>

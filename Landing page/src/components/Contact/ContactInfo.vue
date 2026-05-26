@@ -41,5 +41,10 @@
 
     .reveal {
         cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .reveal:hover{
+        color: aliceblue;
     }
 </style>
