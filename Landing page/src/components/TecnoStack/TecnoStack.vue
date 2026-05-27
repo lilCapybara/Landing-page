@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>Gestion de bases de datos</h3>
+            <h3>Gestión de bases de datos</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="../../../assets/images/sqlIcon.png"
@@ -115,8 +115,27 @@
 
 <style scoped>
 
-.container{
-    display: flex;
+.container {
+    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.stackCategory {
+    
+  min-width: 180px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  align-items: center; 
+}
+
+.stackCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 </style>

@@ -24,7 +24,7 @@ a {
 
 .card{
   height: 100%;
-   
+  text-align: center;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;

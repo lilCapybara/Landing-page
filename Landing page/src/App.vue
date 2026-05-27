@@ -18,9 +18,12 @@
   <div id="generalContainer">
     <div id="sobre-mi"><AboutSection></AboutSection></div>
     
-    <div id="formacion"><Education></Education></div>
+    <div id="edTrabajoContainer">
+      <div id="formacion"><Education></Education></div>
     
-    <div id="experiencia"><LaboralXP></LaboralXP></div>
+      <div id="experiencia"><LaboralXP></LaboralXP></div>
+    </div>
+    
     
     <div id="stack"><TecnoStack ></TecnoStack></div>
     
@@ -35,10 +38,17 @@
 
 <style scoped>
 
-  #generalContainer{
-    margin-left: 2%;
-  }
+  #generalContainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: justify;
+    justify-content: center;
+}
 
+#edTrabajoContainer{
+  display: flex;
+}
   
   
 </style>
