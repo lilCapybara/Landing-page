@@ -7,7 +7,6 @@ import ContactInfo from './ContactInfo.vue';
 <template>
     <h2>Contacto</h2>
     <div id="container">
-        <ContactInfo></ContactInfo>
         <ContactForm></ContactForm>
     </div>   
 </template>
@@ -15,6 +14,6 @@ import ContactInfo from './ContactInfo.vue';
 <style scoped>
     #container{
         display: flex;
-        gap: 15%;
+        justify-content: center;
     }
 </style>

@@ -15,7 +15,7 @@
         <li>
             <h3>Universidad Nacional de Mar del Plata (2018-2022)</h3>
             <p> 
-                Ingenieria Electronica (Incompleta)
+                Ingenieria Electronica (Incompleta).
             </p>
         </li>
     </ul>

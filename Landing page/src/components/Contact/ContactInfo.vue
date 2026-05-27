@@ -6,10 +6,7 @@
 
 <template>
     <div id="container">
-        <div class="contactElement">
-            <img src="../../../assets/images/linkedin.png" alt="Icono Linkedin">
-            <p>https://www.linkedin.com/in/s-g-ortega</p>
-        </div>
+        <h4>O envie un mensaje a mi correo electrónico:</h4>
         <div class="contactElement">
             <img src="../../../assets/images/mail.png" alt="Icono email">
             <div>
@@ -23,15 +20,20 @@
 </template>
 
 <style scoped>
-    #container{
-        display: block;
+    #container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    h4{
+        margin-bottom: 0;
     }
 
     .contactElement {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     .contactElement img {

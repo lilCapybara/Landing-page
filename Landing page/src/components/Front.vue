@@ -4,6 +4,20 @@
     <div id="container">
         <h1>Sebastián Ortega</h1>
         <h2>Software developer</h2>
+
+        <div class="buttonContainer">
+            
+            <a class="Btn" href="https://www.linkedin.com/in/s-g-ortega">
+                <img src="../../assets/images/linkedin.png" alt="Icono LinkedIN">    
+                LinkedIN
+            </a>
+            <a class="Btn" href="../../public/Sebastian Ortega CV (ES).pdf" target="_blank">Ver CV</a>
+            <a class="Btn" href="https://github.com/workerCapybara">
+                <img src="../../assets/images/githubIcon.png" alt="Icono Github">
+                Github
+            </a>
+        </div>
+        
     </div>
     
 </template>
@@ -53,5 +67,39 @@
         100% {
             background-position: 0% 50%;
         }
+    }
+
+    .buttonContainer {
+        display: flex;
+        gap: 10px
+    }
+
+    .Btn {
+        background-color: rgba(0, 0, 0, 0.466);
+        padding: 6px 16px;
+        border-radius: 6px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        align-self: center;
+        white-space: nowrap;
+    }
+
+    .Btn:hover {
+        background-color: rgb(228, 228, 228);
+        color: #000;
+    }
+
+    .Btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    }
+
+    a{
+        color: rgb(228, 228, 228);
     }
 </style>

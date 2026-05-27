@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import { ref } from 'vue'
     import emailjs from '@emailjs/browser'
+import ContactInfo from './ContactInfo.vue'
 
     const nombre = ref('')
     const email = ref('')
@@ -43,6 +44,7 @@
             </div>
         </div>
         <button id="sendButton" @click="enviar">Enviar</button>
+        <ContactInfo></ContactInfo>
     </div>
     
 </template>
@@ -52,28 +54,44 @@
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.466);
-        padding-left: 5%;
-        padding-right: 10%;
-        padding-bottom: 5%;
+        padding: 5%;
         border-radius: 10px;
+        width: fit-content;
+    }
+
+    p{
+        margin-bottom: 1%;
     }
 
     #inputContainer{
         display: flex;
-        gap: 10%;
+        gap: 5%;
     }
 
-    
+    #inputContainer > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
-    input, textarea{
-        width: 110%;
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(44, 44, 44, 0.466);
+    }
+
+    textarea {
+        flex: 1;
     }
 
     h3{
         margin-bottom: 0%;
+        margin-top: 0%;
     }
 
-    button{
+    button {
         margin-top: 5%;
+        width: 100%;
+        box-sizing: border-box;
     }
 </style>
