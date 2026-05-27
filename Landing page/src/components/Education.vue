@@ -25,4 +25,7 @@
     li{
         list-style: none;
     }
+     h2, h3 {
+        text-align: center;
+    }
 </style>

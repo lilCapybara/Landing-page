@@ -8,6 +8,7 @@
   import TecnoStack from './components/TecnoStack/TecnoStack.vue';
   import Footer from './components/Footer.vue';
   import ProjectsSection from './components/ProjectsSection/ProjectsSection.vue';
+  import LanguagesSection from './components/Languages/languagesSection.vue';
 </script>
 
 <template>
@@ -20,10 +21,11 @@
     
     <div id="edTrabajoContainer">
       <div id="formacion"><Education></Education></div>
-    
+      <div class="divider"></div>
       <div id="experiencia"><LaboralXP></LaboralXP></div>
     </div>
     
+    <div id="idiomas"><LanguagesSection></LanguagesSection></div>
     
     <div id="stack"><TecnoStack ></TecnoStack></div>
     
@@ -31,9 +33,8 @@
     
     <div id="contacto"><ContactSection></ContactSection></div>
     
-    <Footer></Footer>
   </div>
-  
+  <Footer></Footer>
 </template>
 
 <style scoped>
@@ -46,9 +47,23 @@
     justify-content: center;
 }
 
-#edTrabajoContainer{
-  display: flex;
-}
-  
+ #edTrabajoContainer {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .divider {
+        width: 1px;
+        background-color: #ccc;
+        align-self: stretch;
+    }
+ 
+#sobre-mi, #formacion, #experiencia, #idiomas, #stack, #proyectos, #contacto {
+  scroll-margin-top: 65px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}  
   
 </style>

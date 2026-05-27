@@ -23,6 +23,11 @@
                 TecnoAlt="Icono Kotlin"
                 TecnoNombre="Kotlin">
                 </StackCard>
+                <StackCard
+                TecnoIcono="../../../assets/images/phpIcon.png"
+                TecnoAlt="Icono PHP"
+                TecnoNombre="PHP">
+                </StackCard>
             </div>
         </div>
         <div class="stackCategory">

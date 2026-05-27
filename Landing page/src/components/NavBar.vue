@@ -12,6 +12,7 @@
         <a class="barItem" href="#sobre-mi">{{ t('nav.sobreMi') }}</a>
         <a class="barItem" href="#formacion">{{ t('nav.formacion') }}</a>
         <a class="barItem" href="#experiencia">{{ t('nav.experiencia') }}</a>
+        <a class="barItem" href="#idiomas">{{ t('nav.idiomas') }}</a>
         <a class="barItem" href="#stack">{{ t('nav.stack') }}</a>
         <a class="barItem" href="#proyectos">{{ t('nav.proyectos') }}</a>
         <a class="barItem" href="#contacto">{{ t('nav.contacto') }}</a>
@@ -23,8 +24,11 @@
 #container {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgb(0, 0, 0);
     gap: 5%;
+    position: sticky;
+    top: 0;            
+    z-index: 100;       
 }
 
 .barItem {

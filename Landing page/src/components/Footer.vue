@@ -9,7 +9,9 @@
 
 <style scoped>
     .container{
+        background-color: rgba(0, 0, 0, 0.466);
+        margin-top: 2%;
         justify-content: center;
-        padding: 10%
+        padding: 2%
     }
 </style>
