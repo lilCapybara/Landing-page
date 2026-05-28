@@ -10,14 +10,14 @@ import ContactInfo from './ContactInfo.vue'
     const enviar = async () => {
         try {
             await emailjs.send(
-                'service_cuair1s',
-                'template_irktq96',
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
                     nombre: nombre.value,
                     email: email.value,
                     consulta: consulta.value,
                 },
-                't90KCBgtljw5Ygs1X'
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
             alert('Consulta enviada correctamente.')
         } catch (error) {
