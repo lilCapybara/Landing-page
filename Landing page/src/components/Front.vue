@@ -11,7 +11,7 @@
                 <img src="/images/linkedin.png" alt="Icono LinkedIN">    
                 LinkedIN
             </a>
-            <a class="Btn" href="../../public/sebastianOrtegaCv.pdf" target="_blank">Ver CV</a>
+            <a class="Btn" href="/sebastianOrtegaCv.pdf" target="_blank">Ver CV</a>
             <a class="Btn" href="https://github.com/workerCapybara">
                 <img src="/images/githubIcon.png" alt="Icono Github">
                 Github
