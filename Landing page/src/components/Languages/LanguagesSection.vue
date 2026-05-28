@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import LanguageCard from './languageCard.vue';
+    import LanguageCard from './LanguageCard.vue';
     
 </script>
 
