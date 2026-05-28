@@ -78,6 +78,7 @@ import ContactInfo from './ContactInfo.vue'
         width: 100%;
         box-sizing: border-box;
         background-color: rgba(44, 44, 44, 0.466);
+        color: aliceblue
     }
 
     textarea {
