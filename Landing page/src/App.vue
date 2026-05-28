@@ -8,7 +8,7 @@
   import TecnoStack from './components/TecnoStack/TecnoStack.vue';
   import Footer from './components/Footer.vue';
   import ProjectsSection from './components/ProjectsSection/ProjectsSection.vue';
-  import LanguagesSection from './components/Languages/languagesSection.vue';
+  import LanguagesSection from "./components/Languages/LanguagesSection.vue";
 </script>
 
 <template>
