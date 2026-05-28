@@ -36,7 +36,7 @@ import ContactInfo from './ContactInfo.vue'
                 <input v-model="nombre" placeholder="Ingrese su nombre aqui..." />
 
                 <p>Correo electrónico</p>
-                <input v-model="email" placeholder="Ingrese su correo electrónico aqui..." />
+                <input v-model="email" placeholder="Ingrese su correo..." />
             </div>
             <div id="consultaContainer">
                 <p>Consulta</p>
