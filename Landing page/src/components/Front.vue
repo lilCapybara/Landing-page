@@ -8,12 +8,12 @@
         <div class="buttonContainer">
             
             <a class="Btn" href="https://www.linkedin.com/in/s-g-ortega">
-                <img src="../../assets/images/linkedin.png" alt="Icono LinkedIN">    
+                <img src="/images/linkedin.png" alt="Icono LinkedIN">    
                 LinkedIN
             </a>
-            <a class="Btn" href="../../public/Sebastian Ortega CV (ES).pdf" target="_blank">Ver CV</a>
+            <a class="Btn" href="../../public/sebastianOrtegaCv.pdf" target="_blank">Ver CV</a>
             <a class="Btn" href="https://github.com/workerCapybara">
-                <img src="../../assets/images/githubIcon.png" alt="Icono Github">
+                <img src="/images/githubIcon.png" alt="Icono Github">
                 Github
             </a>
         </div>

@@ -9,22 +9,22 @@
             <h3>Lenguajes de programación</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/javaIcon.png"
+                TecnoIcono="/images/javaIcon.png"
                 TecnoAlt="Icono Java"
                 TecnoNombre="Java">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/jsIcon.png"
+                TecnoIcono="/images/jsIcon.png"
                 TecnoAlt="Icono Javascript"
                 TecnoNombre="Javascript">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/kotlinIcon.png"
+                TecnoIcono="/images/kotlinIcon.png"
                 TecnoAlt="Icono Kotlin"
                 TecnoNombre="Kotlin">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/phpIcon.png"
+                TecnoIcono="/images/phpIcon.png"
                 TecnoAlt="Icono PHP"
                 TecnoNombre="PHP">
                 </StackCard>
@@ -34,12 +34,12 @@
             <h3>Gestión de bases de datos</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/sqlIcon.png"
+                TecnoIcono="/images/sqlIcon.png"
                 TecnoAlt="Icono SQL"
                 TecnoNombre="SQL">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/postgreIcon.png"
+                TecnoIcono="/images/postgreIcon.png"
                 TecnoAlt="Icono PostgreSQL"
                 TecnoNombre="PostgreSQL">
                 </StackCard>
@@ -49,17 +49,17 @@
             <h3>Frontend</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/htmlIcon.png"
+                TecnoIcono="/images/htmlIcon.png"
                 TecnoAlt="Icono HTML"
                 TecnoNombre="HTML">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/cssIcon.png"
+                TecnoIcono="/images/cssIcon.png"
                 TecnoAlt="Icono CSS"
                 TecnoNombre="CSS">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/figmaIcon.png"
+                TecnoIcono="/images/figmaIcon.png"
                 TecnoAlt="Icono Figma"
                 TecnoNombre="Figma">
                 </StackCard>
@@ -69,7 +69,7 @@
             <h3>QA</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/testngIcon.png"
+                TecnoIcono="/images/testngIcon.png"
                 TecnoAlt="Icono TestNG"
                 TecnoNombre="TestNG">
         </StackCard>
@@ -79,7 +79,7 @@
             <h3>DevOps</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/gitIcon.png"
+                TecnoIcono="/images/gitIcon.png"
                 TecnoAlt="Icono Git"
                 TecnoNombre="Git">
                 </StackCard>
@@ -89,17 +89,17 @@
             <h3>Frameworks</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/angular.png"
+                TecnoIcono="/images/angular.png"
                 TecnoAlt="Icono Angular"
                 TecnoNombre="Angular">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/vueIcon.png"
+                TecnoIcono="/images/vueIcon.png"
                 TecnoAlt="Icono Vue"
                 TecnoNombre="Vue">
                 </StackCard>
                 <StackCard
-                TecnoIcono="../../../assets/images/springbootIcon.png"
+                TecnoIcono="/images/springbootIcon.png"
                 TecnoAlt="Icono Springboot"
                 TecnoNombre="Springboot">
                 </StackCard>
@@ -109,7 +109,7 @@
             <h3>Entornos de ejecución</h3>
             <div class="stackCardsContainer">
                 <StackCard
-                TecnoIcono="../../../assets/images/nodejsIcon.png"
+                TecnoIcono="/images/nodejsIcon.png"
                 TecnoAlt="Icono NodeJS"
                 TecnoNombre="NodeJS">
                 </StackCard>

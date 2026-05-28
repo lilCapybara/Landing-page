@@ -26,10 +26,10 @@ import LanguageCard from './Languages/LanguageCard.vue';
             </p>
         </div>
         <div id="imageContainer">
-            <img src="../../assets/images/me.jpg" alt="Sebastián Ortega">
+            <img src="/images/me.jpg" alt="Sebastián Ortega">
             <div id="ubicacion">
                 <LanguageCard
-                BanderaIcono="../../assets/images/argentinaFlag.png"
+                BanderaIcono="/images/argentinaFlag.png"
                 IdiomaNombre="Tandil, Buenos Aires"
                 IdiomaNivel="Argentina">
                 </LanguageCard>

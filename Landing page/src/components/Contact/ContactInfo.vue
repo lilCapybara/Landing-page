@@ -8,7 +8,7 @@
     <div id="container">
         <h4>O envie un mensaje a mi correo electrónico:</h4>
         <div class="contactElement">
-            <img src="../../../assets/images/mail.png" alt="Icono email">
+            <img src="/images/mail.png" alt="Icono email">
             <div>
                 <p v-if="!mailVisible" @click="mailVisible = true" class="reveal">
                     Haga clic para revelar correo electrónico
