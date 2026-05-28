@@ -33,14 +33,14 @@ import ContactInfo from './ContactInfo.vue'
         <div id="inputContainer">
             <div>
                 <p>Nombre</p>
-                <input v-model="nombre" placeholder="Ingrese su nombre aqui..." />
+                <input v-model="nombre" placeholder="Ingrese su nombre aquí..." />
 
                 <p>Correo electrónico</p>
-                <input v-model="email" placeholder="Ingrese su correo..." />
+                <input v-model="email" placeholder="Ingrese su correo aquí..." />
             </div>
             <div id="consultaContainer">
                 <p>Consulta</p>
-                <textarea v-model="consulta" placeholder="Ingrese su consulta aqui..."></textarea>
+                <textarea v-model="consulta" placeholder="Ingrese su consulta aquí..."></textarea>
             </div>
         </div>
         <button id="sendButton" @click="enviar">Enviar</button>
