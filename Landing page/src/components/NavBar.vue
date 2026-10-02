@@ -1,5 +1,7 @@
 <script setup lang="ts">
     import { useI18n } from 'vue-i18n'
+import LanguageButton from './LanguageButton.vue';
+import ThemeButton from './ThemeButton.vue';
 
     const { t, locale } = useI18n()
 
@@ -16,6 +18,8 @@
         <a class="barItem" href="#stack">{{ t('nav.stack') }}</a>
         <a class="barItem" href="#proyectos">{{ t('nav.proyectos') }}</a>
         <a class="barItem" href="#contacto">{{ t('nav.contacto') }}</a>
+        <LanguageButton class="barItem"></LanguageButton>
+        <ThemeButton class="barItem"></ThemeButton>
     </div>   
 </template>
 
@@ -44,6 +48,11 @@
 
 .barItem:hover {
     border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+button{
+    background-color:  rgb(0, 0, 0);
+    border: none;
 }
 </style>
 

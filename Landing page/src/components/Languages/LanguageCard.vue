@@ -1,9 +1,9 @@
 <script setup lang="ts">
-defineProps<{
-  BanderaIcono: string
-  IdiomaNombre: string
-  IdiomaNivel: string
-}>()
+    defineProps<{
+    BanderaIcono: string
+    IdiomaNombre: string
+    IdiomaNivel: string
+    }>()
 </script>
 
 <template>

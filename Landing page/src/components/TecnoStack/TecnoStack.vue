@@ -1,12 +1,15 @@
 <script setup lang="ts">
     import StackCard from './StackCard.vue';
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
 </script>
 
 <template>
-    <h2>Mi stack</h2>
+    <h2>{{ t('tecnoStack.title') }}</h2>
     <div class="container">
         <div class="stackCategory">
-            <h3>Lenguajes de programación</h3>
+            <h3>{{ t('tecnoStack.languages') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/javaIcon.png"
@@ -31,7 +34,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>Gestión de bases de datos</h3>
+            <h3>{{ t('tecnoStack.db') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/sqlIcon.png"
@@ -46,7 +49,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>Frontend</h3>
+            <h3>{{ t('tecnoStack.frontend') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/htmlIcon.png"
@@ -66,7 +69,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>QA</h3>
+            <h3>{{ t('tecnoStack.qa') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/testngIcon.png"
@@ -76,7 +79,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>DevOps</h3>
+            <h3>{{ t('tecnoStack.devops') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/gitIcon.png"
@@ -86,7 +89,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>Frameworks</h3>
+            <h3>{{ t('tecnoStack.frameworks') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/angular.png"
@@ -106,7 +109,7 @@
             </div>
         </div>
         <div class="stackCategory">
-            <h3>Entornos de ejecución</h3>
+            <h3>{{ t('tecnoStack.environments') }}</h3>
             <div class="stackCardsContainer">
                 <StackCard
                 TecnoIcono="/images/nodejsIcon.png"

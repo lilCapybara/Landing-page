@@ -1,29 +1,17 @@
 <script setup lang="ts">
 import LanguageCard from './Languages/LanguageCard.vue';
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 </script>
 
 <template>
-    <h2>Sobre mi</h2>
+    <h2>{{ t('aboutSection.title') }}</h2>
     <div id="generalContainer">
         <div id="textContainer">
-            <p>
-                Empleado de comercio y estudiante de la
-                Tecnicatura Universitaria en Desarrollo de
-                Aplicaciones Informaticas (TUDAI) en la UNICEN 
-                (Universidad Nacional del Centro de la provincia 
-                de Buenos Aires).
-            </p>
-            <p>
-                Me considero una persona que presta especial
-                atencion al detalle y busca mantener su entorno
-                de trabajo lo mas ordenado posible.
-            </p> 
-            <p>
-                Siempre estoy interesado en adquirir nuevos
-                conocimientos, lo que me facilita el adaptarme a
-                los desafios que se me presenten.
-            </p>
+            <p>{{ t('aboutSection.p1') }}</p>
+            <p>{{ t('aboutSection.p2') }}</p>
+            <p>{{ t('aboutSection.p3') }}</p>
         </div>
         <div id="imageContainer">
             <img src="/images/me.jpg" alt="Sebastián Ortega">

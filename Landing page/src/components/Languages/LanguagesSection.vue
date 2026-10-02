@@ -1,25 +1,28 @@
 <script setup lang="ts">
     import LanguageCard from './LanguageCard.vue';
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
     
 </script>
 
 <template>
-    <h2>Idiomas</h2>
+    <h2>{{ t('languageSection.title') }}</h2>
     <div id="languagesContainer">
         <LanguageCard
         BanderaIcono="/images/spainFlag.png"
-        IdiomaNombre="Español"
-        IdiomaNivel="Nativo"
+        :IdiomaNombre="t('languageSection.es')"
+        :IdiomaNivel="t('languageSection.native')"
         ></LanguageCard>
         <LanguageCard
         BanderaIcono="/images/unitedKingdomFlag.png"
-        IdiomaNombre="Ingles"
-        IdiomaNivel="C1"
+        :IdiomaNombre="t('languageSection.en')"
+        :IdiomaNivel="t('languageSection.C1')"
         ></LanguageCard>
         <LanguageCard
         BanderaIcono="/images/germanyFlag.png"
-        IdiomaNombre="Aleman"
-        IdiomaNivel="A2"
+        :IdiomaNombre="t('languageSection.de')"
+        :IdiomaNivel="t('languageSection.A2')"
         ></LanguageCard>
     </div>
 </template>

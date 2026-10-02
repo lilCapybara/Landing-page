@@ -1,14 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    import { useI18n } from 'vue-i18n'
+    const { t, locale } = useI18n()
+</script>
 
 <template>
-    <h2>Experiencia laboral</h2>
+    <h2>{{ t('laboralXP.title') }}</h2>
 
     <ul>
         <li>
-            <h3>Lubricantes Canning (2022-Actualidad)</h3>
-            <p> Encargado de atencion al cliente, control de
-                inventario, toma de pedidos y tareas de limpieza.
-            </p>
+            <h3>{{ t('laboralXP.subtitle1') }}</h3>
+            <p>{{ t('laboralXP.p1') }}</p>
         </li>
     </ul>
 </template>

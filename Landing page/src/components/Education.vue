@@ -1,22 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
+</script>
 
 <template>
-    <h2>Formacion académica</h2>
+    <h2>{{ t('education.title') }}</h2>
 
     <ul>
         <li>
-            <h3>Universidad Nacional del centro de la provincia de Buenos Aires (2023-Actualidad)</h3>
-            <p> 
-                Tecnicatura Universitaria en Desarrollo de
-                Aplicaciones Informaticas (Cursadas
-                completadas).
-            </p>
+            <h3>{{ t('education.subtitle1') }}</h3>
+            <p>{{ t('education.p1') }}</p>
         </li>
         <li>
-            <h3>Universidad Nacional de Mar del Plata (2018-2022)</h3>
-            <p> 
-                Ingenieria Electronica (Incompleta).
-            </p>
+            <h3>{{ t('education.subtitle2') }}</h3>
+            <p>{{ t('education.p2') }}</p>
         </li>
     </ul>
 </template>

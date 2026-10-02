@@ -1,17 +1,20 @@
 <script setup lang="ts">
     import { ref } from 'vue'
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
 
     const mailVisible = ref(false)
 </script>
 
 <template>
     <div id="container">
-        <h4>O envie un mensaje a mi correo electrónico:</h4>
+        <h4>{{ t('contactSection.subtitle') }}</h4>
         <div class="contactElement">
             <img src="/images/mail.png" alt="Icono email">
             <div>
                 <p v-if="!mailVisible" @click="mailVisible = true" class="reveal">
-                    Haga clic para revelar correo electrónico
+                    {{ t('contactSection.emailreveal') }}
                 </p>
                 <p v-else>ortegasebastiangaston@gmail.com</p>
             </div>

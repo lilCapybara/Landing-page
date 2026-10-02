@@ -1,7 +1,10 @@
 <script setup lang="ts">
     import { ref } from 'vue'
     import emailjs from '@emailjs/browser'
-import ContactInfo from './ContactInfo.vue'
+    import ContactInfo from './ContactInfo.vue'
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
 
     const nombre = ref('')
     const email = ref('')
@@ -19,9 +22,9 @@ import ContactInfo from './ContactInfo.vue'
                 },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
-            alert('Consulta enviada correctamente.')
+            alert(t('contactSection.messageSent'))
         } catch (error) {
-            alert('Hubo un error al enviar. Intente nuevamente.')
+            alert(t('contactSection.errorMessage'))
             console.error(error)
         }
     }
@@ -29,21 +32,21 @@ import ContactInfo from './ContactInfo.vue'
 
 <template>
     <div id="formularioConsulta">
-        <h3>¡Envie su consulta!</h3>
+        <h3>{{ t('contactSection.title') }}</h3>
         <div id="inputContainer">
             <div>
-                <p>Nombre</p>
-                <input v-model="nombre" placeholder="Ingrese su nombre aquí..." />
+                <p>{{ t('contactSection.name') }}</p>
+                <textarea v-model="nombre" :placeholder="t('contactSection.namePlaceholder')"></textarea>
 
-                <p>Correo electrónico</p>
-                <input v-model="email" placeholder="Ingrese su correo aquí..." />
+                <p>{{ t('contactSection.email') }}</p>
+                <textarea v-model="email" :placeholder="t('contactSection.emailPlaceholder')"></textarea>
             </div>
             <div id="consultaContainer">
-                <p>Consulta</p>
-                <textarea v-model="consulta" placeholder="Ingrese su consulta aquí..."></textarea>
+                <p>{{ t('contactSection.inquiry') }}</p>
+                <textarea v-model="consulta" :placeholder="t('contactSection.inquiryPlaceholder')"></textarea>
             </div>
         </div>
-        <button id="sendButton" @click="enviar">Enviar</button>
+        <button id="sendButton" @click="enviar">{{ t('contactSection.sendButton') }}</button>
         <ContactInfo></ContactInfo>
     </div>
     

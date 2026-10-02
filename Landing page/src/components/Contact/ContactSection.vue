@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import ContactForm from './ContactForm.vue';
 import ContactInfo from './ContactInfo.vue';
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 </script>
 
 <template>
-    <h2>Contacto</h2>
+    <h2>{{ t('contactSection.title') }}</h2>
     <div id="container">
         <ContactForm></ContactForm>
     </div>   

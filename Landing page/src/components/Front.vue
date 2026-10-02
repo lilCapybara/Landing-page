@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    import { useI18n } from 'vue-i18n'
+    const { t, locale } = useI18n()
+</script>
 <template>
 
     <div id="container">
@@ -11,7 +14,7 @@
                 <img src="/images/linkedin.png" alt="Icono LinkedIN">    
                 LinkedIN
             </a>
-            <a class="Btn" href="/sebastianOrtegaCv.pdf" target="_blank">Ver CV</a>
+            <a class="Btn" href="/sebastianOrtegaCv.pdf" target="_blank">{{ t('front.CV') }}</a>
             <a class="Btn" href="https://github.com/workerCapybara">
                 <img src="/images/githubIcon.png" alt="Icono Github">
                 Github

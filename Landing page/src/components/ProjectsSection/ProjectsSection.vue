@@ -1,43 +1,39 @@
 <script setup lang="ts">
     import ProjectCard from './ProjectCard.vue';
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n()
 </script>
 
 <template>
 
-    <h2>Proyectos</h2>
+    <h2>{{ t('projectsSection.title') }}</h2>
     <div id="projectCardContainer">
       <ProjectCard 
-        titulo="Sitio web realizado en Angular"
+        :titulo="t('projectsSection.subtitle1')"
 
-        descripcion="Sitio web para venta de maquetas que contiene
-        una lista de productos, un carrito de compra y una
-        página de contacto."
+        :descripcion="t('projectsSection.p1')"
 
         link="https://github.com/lilCapybara/Koda-CraftAngular.git" 
       />
       <ProjectCard 
-        titulo="League of Legends API"
+        :titulo="t('projectsSection.subtitle2')"
 
-        descripcion="API con endpoints para operaciones CRUD,
-        incluyendo ademas una autenticación con usuario
-        y contraseña y token JWT."
+        :descripcion="t('projectsSection.p2')"
 
         link="https://github.com/workerCapybara/LeagueOfLegendsAPI" 
       />
       <ProjectCard 
-        titulo="Browser de videojuegos para Android"
+        :titulo="t('projectsSection.subtitle3')"
 
-        descripcion="Aplicación para Android que consume datos de la
-        API RAWG para mostrar una lista de videojuegos." 
+        :descripcion="t('projectsSection.p3')"
 
         link="https://github.com/workerCapybara/vgbrowser.git" 
       />
       <ProjectCard 
-        titulo="Mi portfolio realizado en Vue"
+        :titulo="t('projectsSection.subtitle4')"
 
-        descripcion="El portfolio que ahora esta navegando fue creado utilizando el framework Vue. 
-        Cuenta con un navbar que lleva a las distintas secciones de la página y un formulario de contacto 
-        para enviar mensajes directamente a mi correo electrónico."
+        :descripcion="t('projectsSection.p4')"
 
         link="https://github.com/lilCapybara/Landing-page.git" 
       />
