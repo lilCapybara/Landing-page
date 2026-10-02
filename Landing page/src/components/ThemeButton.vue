@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const isDark = ref(true)
 
-function toggleTema() {
-  isDark.value = !isDark.value
+function applyTheme() {
   document.body.className = isDark.value ? 'dark' : 'light'
 }
+
+function toggleTema() {
+  isDark.value = !isDark.value
+  applyTheme()
+}
+
+onMounted(applyTheme)
 </script>
 
 <template>
