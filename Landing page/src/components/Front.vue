@@ -1,6 +1,15 @@
 <script setup lang="ts">
+    import { computed } from 'vue'
     import { useI18n } from 'vue-i18n'
+
     const { t, locale } = useI18n()
+
+    const cvFiles: Record<string, string> = {
+    es: 'Sebastian Ortega CV (ES).pdf',
+    en: 'Sebastian Ortega CV (EN).pdf'
+    }
+
+    const cvUrl = computed(() => cvFiles[locale.value] ?? cvFiles.en)
 </script>
 <template>
 
@@ -14,7 +23,7 @@
                 <img src="/images/linkedin.png" alt="Icono LinkedIN">    
                 LinkedIN
             </a>
-            <a class="Btn" href="/sebastianOrtegaCv.pdf" target="_blank">{{ t('front.CV') }}</a>
+            <a class="Btn" :href="cvUrl" target="_blank" rel="noopener">{{ t('front.CV') }}</a>
             <a class="Btn" href="https://github.com/workerCapybara">
                 <img src="/images/githubIcon.png" alt="Icono Github">
                 Github
